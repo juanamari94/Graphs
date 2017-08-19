@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		953DF0491F468ED600169DE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 953DF0481F468ED600169DE0 /* main.c */; };
+		955CC2911F47CFC4002B750E /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 955CC28D1F47CFC4002B750E /* graph.c */; };
+		955CC2921F47CFC4002B750E /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 955CC28F1F47CFC4002B750E /* linkedlist.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		953DF0451F468ED600169DE0 /* Graphs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Graphs; sourceTree = BUILT_PRODUCTS_DIR; };
 		953DF0481F468ED600169DE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		955CC28D1F47CFC4002B750E /* graph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
+		955CC28E1F47CFC4002B750E /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		955CC28F1F47CFC4002B750E /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
+		955CC2901F47CFC4002B750E /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		953DF0471F468ED600169DE0 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
+				955CC28D1F47CFC4002B750E /* graph.c */,
+				955CC28E1F47CFC4002B750E /* graph.h */,
+				955CC28F1F47CFC4002B750E /* linkedlist.c */,
+				955CC2901F47CFC4002B750E /* linkedlist.h */,
 				953DF0481F468ED600169DE0 /* main.c */,
 			);
 			path = Graphs;
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955CC2911F47CFC4002B750E /* graph.c in Sources */,
 				953DF0491F468ED600169DE0 /* main.c in Sources */,
+				955CC2921F47CFC4002B750E /* linkedlist.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +260,7 @@
 				953DF04E1F468ED600169DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
