@@ -10,6 +10,7 @@
 		953DF0491F468ED600169DE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 953DF0481F468ED600169DE0 /* main.c */; };
 		955CC2911F47CFC4002B750E /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 955CC28D1F47CFC4002B750E /* graph.c */; };
 		955CC2921F47CFC4002B750E /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 955CC28F1F47CFC4002B750E /* linkedlist.c */; };
+		955CC2951F4B26C1002B750E /* multilinkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2941F4B26C1002B750E /* multilinkedlist.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		955CC28E1F47CFC4002B750E /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		955CC28F1F47CFC4002B750E /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
 		955CC2901F47CFC4002B750E /* linkedlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
+		955CC2931F4B2649002B750E /* multilinkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multilinkedlist.h; sourceTree = "<group>"; };
+		955CC2941F4B26C1002B750E /* multilinkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = multilinkedlist.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				955CC28F1F47CFC4002B750E /* linkedlist.c */,
 				955CC2901F47CFC4002B750E /* linkedlist.h */,
 				953DF0481F468ED600169DE0 /* main.c */,
+				955CC2931F4B2649002B750E /* multilinkedlist.h */,
+				955CC2941F4B26C1002B750E /* multilinkedlist.c */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955CC2951F4B26C1002B750E /* multilinkedlist.c in Sources */,
 				955CC2911F47CFC4002B750E /* graph.c in Sources */,
 				953DF0491F468ED600169DE0 /* main.c in Sources */,
 				955CC2921F47CFC4002B750E /* linkedlist.c in Sources */,

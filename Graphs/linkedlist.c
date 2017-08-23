@@ -17,8 +17,7 @@ void add_list_element(ListElement *root, ListElement *element) {
 void add_list_element_at(int index, ListElement* root, ListElement *element) {
   if (root == NULL) {
     root = element;
-  }
-  else {
+  } else {
     if (index > get_linkedlist_size(root)) {
     } else {
       ListElement *aux = root;
@@ -38,7 +37,7 @@ void add_list_element_at(int index, ListElement* root, ListElement *element) {
   }
 }
 
-ListElement* delete_head(ListElement *root) {
+ListElement* pop(ListElement *root) {
   if (root == NULL) {
     return NULL;;
   } else {
@@ -88,5 +87,16 @@ void print_linkedlist(ListElement *root) {
 ListElement* create_list_element(int value) {
   ListElement* element = (ListElement *)malloc(sizeof(ListElement));
   element -> value = value;
+  element -> nextElement = NULL;
   return element;
+}
+
+void destroy_list(ListElement *root) {
+  ListElement *current = root;
+  while (current != NULL) {
+    ListElement *next = current -> nextElement;
+    free(current);
+    current = next;
+  }
+  root = NULL;
 }

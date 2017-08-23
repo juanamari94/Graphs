@@ -4,8 +4,6 @@
 #include "linkedlist.h"
 
 int main() {
-  printf("hello\n");
-  test();
   ListElement *root = create_list_element(0);
   ListElement *node = create_list_element(1);
   ListElement *node2 = create_list_element(2);
@@ -18,7 +16,8 @@ int main() {
   printf("\n");
   print_linkedlist(root);
   printf("\n");
-  root = delete_head(root);
+  root = pop(root);
   print_linkedlist(root);
+  destroy_list(root);
   return 0;
 }
