@@ -1,3 +1,4 @@
 .DS_Store
 Graphs.xcodeproj/project.xcworkspace/
 Graphs.xcodeproj/xcuserdata/
+cmake-build-debug/

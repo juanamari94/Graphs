@@ -4,14 +4,13 @@
 
 void add_list_element(ListElement *root, ListElement *element) {
   if (root == NULL) {
-    root = element;
-  } else {
-    ListElement *aux = root;
-    while (aux -> nextElement != NULL) {
-      aux = aux -> nextElement;
-    }
-    aux -> nextElement = element;
+    return;
   }
+  ListElement *aux = root;
+  while (aux -> nextElement != NULL) {
+    aux = aux -> nextElement;
+  }
+  aux -> nextElement = element;
 }
 
 void add_list_element_at(int index, ListElement* root, ListElement *element) {
@@ -37,27 +36,28 @@ void add_list_element_at(int index, ListElement* root, ListElement *element) {
   }
 }
 
-ListElement* pop(ListElement *root) {
+ListElement* delete_head(ListElement *root) {
   if (root == NULL) {
-    return NULL;;
-  } else {
-    ListElement *aux;
-    aux = root -> nextElement;
-    free(root);
-    return aux;
+    return NULL;
   }
+  ListElement *aux;
+  aux = root -> nextElement;
+  free(root);
+  return aux;
 }
 
 void delete_end(ListElement *root) {
   if (root == NULL) {
     return;
   }
-
   ListElement *aux = root;
+  ListElement *previous;
   while (aux -> nextElement != NULL) {
+    previous = aux;
     aux = aux -> nextElement;
   }
-  aux -> nextElement = NULL;
+  previous -> nextElement = NULL;
+  free(aux);
 }
 
 int get_linkedlist_size(ListElement *root) {
@@ -98,5 +98,21 @@ void destroy_list(ListElement *root) {
     free(current);
     current = next;
   }
-  root = NULL;
+}
+
+ListElement* pop(ListElement *root) {
+  if (root == NULL) {
+    return NULL;
+  }
+
+  ListElement *aux = root;
+  ListElement *previous;
+  while (aux -> nextElement != NULL) {
+    previous = aux;
+    aux = aux -> nextElement;
+  }
+  previous -> nextElement = NULL;
+  ListElement *poppedElement = create_list_element(aux -> value);
+  free(aux);
+  return poppedElement;
 }
